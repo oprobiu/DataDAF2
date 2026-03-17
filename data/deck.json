@@ -1,0 +1,64 @@
+{
+  "deck_name": "A2_Wortliste_Goethe",
+  "deck_id": 1516787586817,
+  "notetype_id": 1497484511582,
+  "notetype_name": "Basic (and reversed card)-75aea",
+  "tools_repo": "oprobiu/AFAS",
+  "tools_version": "v0.1.0",
+  "fields": [
+    {
+      "name": "fo_word",
+      "csv": "fo_word"
+    },
+    {
+      "name": "fo_sentence",
+      "csv": "fo_sentence"
+    },
+    {
+      "name": "na_word",
+      "csv": "na_word"
+    },
+    {
+      "name": "na_sentence",
+      "csv": "na_sentence"
+    },
+    {
+      "name": "na_note",
+      "csv": "na_note"
+    },
+    {
+      "name": "fo_sentence_audio",
+      "csv": "fo_sentence_audio"
+    },
+    {
+      "name": "fo_word_audio",
+      "csv": "fo_word_audio"
+    }
+  ],
+  "templates": [
+    {
+      "name": "Card 1",
+      "front": "{{fo_word}} {{fo_word_audio}}\n{{#fo_sentence}}\n<br><br>\n<i>{{fo_sentence}}</i>\n{{/fo_sentence}}",
+      "back": "{{FrontSide}}\n\n<hr id=answer>\n\n{{na_word}}\n{{#na_sentence}}\n<br><br>\n<i>{{na_sentence}}</i>\n{{/na_sentence}}\n{{#na_note}}\n<br><br>\n<small>{{na_note}}</small>\n{{/na_note}}"
+    },
+    {
+      "name": "Card 2",
+      "front": "{{na_word}}\n{{#na_sentence}}\n<br><br>\n<i>{{na_sentence}}</i>\n{{/na_sentence}}\n{{#na_note}}\n<br><br>\n<small>{{na_note}}</small>\n{{/na_note}}",
+      "back": "{{FrontSide}}\n\n<hr id=answer>\n\n{{fo_word}} {{fo_word_audio}}\n{{#fo_sentence}}\n<br><br>\n<i>{{fo_sentence}}</i>\n{{/fo_sentence}}"
+    }
+  ],
+  "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n.replay-button svg {\n width: 40px;\n height: 40px;\n}\n.replay-button svg circle {\n fill: #279FF5;\n}\n.replay-button svg path {\n fill: white;\n}\nhr.sent-sep {\n border: none;\n border-top: 1px dashed #ccc;\n width: 60%;\n margin: 4px auto;\n}\n",
+  "tts": {
+    "engine": "gtts",
+    "language": "de-DE",
+    "voices": [],
+    "targets": [
+      {
+        "field": "fo_word_audio",
+        "source": "fo_word",
+        "prefix": "wort",
+        "strip_html": true
+      }
+    ]
+  }
+}

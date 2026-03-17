@@ -1,0 +1,11 @@
+name: Release
+on:
+  push:
+    tags: ['v*']
+jobs:
+  build:
+    uses: oprobiu/AFAS/.github/workflows/build-release.yml@v0.1.0
+    with:
+      tools-version: v0.1.0
+    permissions:
+      contents: write
