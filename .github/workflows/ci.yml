@@ -1,0 +1,11 @@
+name: CI
+on:
+  push:
+    branches: [main, en]
+  pull_request:
+    branches: [main, en]
+jobs:
+  validate:
+    uses: oprobiu/AFAS/.github/workflows/ci-dataset.yml@v0.2.1
+    with:
+      tools-version: v0.2.1
