@@ -7,6 +7,10 @@
   "tools_version": "v0.1.1",
   "fields": [
     {
+      "name": "note_id",
+      "csv": "note_id"
+    },
+    {
       "name": "fo_word",
       "csv": "fo_word"
     },
