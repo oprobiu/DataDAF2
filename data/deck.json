@@ -4,8 +4,12 @@
   "notetype_id": 1516787586818,
   "notetype_name": "deutsche-vocab-a2",
   "tools_repo": "oprobiu/AFAS",
-  "tools_version": "v0.1.0",
+  "tools_version": "v0.1.1",
   "fields": [
+    {
+      "name": "note_id",
+      "csv": "note_id"
+    },
     {
       "name": "fo_word",
       "csv": "fo_word"
@@ -53,6 +57,17 @@
     "language": "de-DE",
     "voices": [],
     "targets": [
+      {
+        "field": "fo_sentence_audio",
+        "source": "fo_sentence",
+        "prefix": "sent",
+        "split_on": "sent-sep",
+        "dialogue": {
+          "enabled": true,
+          "female_marker": "●",
+          "male_marker": "■"
+        }
+      },
       {
         "field": "fo_word_audio",
         "source": "fo_word",
