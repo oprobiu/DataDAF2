@@ -58,6 +58,17 @@
     "voices": [],
     "targets": [
       {
+        "field": "fo_sentence_audio",
+        "source": "fo_sentence",
+        "prefix": "sent",
+        "split_on": "sent-sep",
+        "dialogue": {
+          "enabled": true,
+          "female_marker": "●",
+          "male_marker": "■"
+        }
+      },
+      {
         "field": "fo_word_audio",
         "source": "fo_word",
         "prefix": "wort",
