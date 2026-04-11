@@ -4,9 +4,9 @@ on:
     tags: ['v*']
 jobs:
   build:
-    uses: oprobiu/AFAS/.github/workflows/build-release.yml@v0.3.0
+    uses: oprobiu/AFAS/.github/workflows/build-release.yml@main
     with:
       deck-configs: 'data/ro/deck.json,data/en/deck.json'
-      tools-version: v0.3.0
+      tools-version: main
     permissions:
       contents: write

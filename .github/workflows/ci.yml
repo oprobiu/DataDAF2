@@ -6,7 +6,7 @@ on:
     branches: [main]
 jobs:
   validate:
-    uses: oprobiu/AFAS/.github/workflows/ci-dataset.yml@v0.3.0
+    uses: oprobiu/AFAS/.github/workflows/ci-dataset.yml@main
     with:
       deck-configs: 'data/ro/deck.json,data/en/deck.json'
-      tools-version: v0.3.0
+      tools-version: main
