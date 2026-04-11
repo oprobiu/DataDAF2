@@ -41,17 +41,17 @@
   ],
   "templates": [
     {
-      "name": "Card 1",
-      "front": "{{fo_word}} {{fo_word_audio}}\n{{#fo_sentence}}\n<br><br>\n<i>{{fo_sentence}}</i>\n{{/fo_sentence}}\n{{fo_sentence_audio}}",
-      "back": "{{FrontSide}}\n\n<hr id=answer>\n\n{{na_word}}\n{{#na_sentence}}\n<br><br>\n<i>{{na_sentence}}</i>\n{{/na_sentence}}\n{{#na_note}}\n<br><br>\n<small>{{na_note}}</small>\n{{/na_note}}"
+      "name": "FO→NA",
+      "front": "{{fo_word}} {{fo_word_audio}}\n{{#fo_sentence}}\n<div class=\"sentence\">{{fo_sentence}}</div>\n{{/fo_sentence}}\n{{fo_sentence_audio}}",
+      "back": "{{FrontSide}}\n\n<hr id=answer>\n\n{{na_word}}\n{{#na_sentence}}\n<div class=\"sentence\">{{na_sentence}}</div>\n{{/na_sentence}}\n{{#na_note}}\n<br>\n<small>{{na_note}}</small>\n{{/na_note}}"
     },
     {
-      "name": "Card 2",
-      "front": "{{na_word}}\n{{#na_sentence}}\n<br><br>\n<i>{{na_sentence}}</i>\n{{/na_sentence}}\n{{#na_note}}\n<br><br>\n<small>{{na_note}}</small>\n{{/na_note}}",
-      "back": "{{FrontSide}}\n\n<hr id=answer>\n\n{{fo_word}} {{fo_word_audio}}\n{{#fo_sentence}}\n<br><br>\n<i>{{fo_sentence}}</i>\n{{/fo_sentence}}\n{{fo_sentence_audio}}"
+      "name": "NA→FO",
+      "front": "{{na_word}}\n{{#na_sentence}}\n<div class=\"sentence\">{{na_sentence}}</div>\n{{/na_sentence}}\n{{#na_note}}\n<br>\n<small>{{na_note}}</small>\n{{/na_note}}",
+      "back": "{{FrontSide}}\n\n<hr id=answer>\n\n{{fo_word}} {{fo_word_audio}}\n{{#fo_sentence}}\n<div class=\"sentence\">{{fo_sentence}}</div>\n{{/fo_sentence}}\n{{fo_sentence_audio}}"
     }
   ],
-  "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n.replay-button svg {\n width: 40px;\n height: 40px;\n}\n.replay-button svg circle {\n fill: #279FF5;\n}\n.replay-button svg path {\n fill: white;\n}\nhr.sent-sep {\n border: none;\n border-top: 1px dashed #ccc;\n width: 60%;\n margin: 4px auto;\n}\n",
+  "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n.sentence {\n margin-top: 0.8em;\n padding-top: 0.6em;\n border-top: 1px solid #e0e0e0;\n font-size: 0.9em;\n color: #333;\n font-style: italic;\n}\n.replay-button svg {\n width: 40px;\n height: 40px;\n}\n.replay-button svg circle {\n fill: #279FF5;\n}\n.replay-button svg path {\n fill: white;\n}\nhr.sent-sep {\n border: none;\n border-top: 1px dashed #ccc;\n width: 60%;\n margin: 4px auto;\n}\n",
   "tts": {
     "engine": "gtts",
     "language": "de-DE",
