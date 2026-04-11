@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -e
-CONFIG="data/deck.json"
+CONFIG="data/ro/deck.json"
 REPO=$(python3 -c "import json; print(json.load(open('$CONFIG'))['tools_repo'])")
 VERSION=$(python3 -c "import json; print(json.load(open('$CONFIG'))['tools_version'])")
 DEST=".tools/AFAS"

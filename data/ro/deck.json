@@ -4,7 +4,7 @@
   "notetype_id": 1516787586818,
   "notetype_name": "deutsche-vocab-a2",
   "tools_repo": "oprobiu/AFAS",
-  "tools_version": "v0.2.1",
+  "tools_version": "v0.3.0",
   "fields": [
     {
       "name": "note_id",
